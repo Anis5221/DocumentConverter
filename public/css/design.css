@@ -1,0 +1,321 @@
+
+:root{
+    --mainColor: #372318;
+    --containerColor: #dc6830;
+    --secondaryColor: #fff;
+    --borderColor: #c1c1c1;
+    --mainText: #fff;
+    --loginHover: #dc6830;
+    --secondaryText: #000;
+    --themeDotBorder: #24292e;
+    --previewBg:  #dc6830;
+    --previewShadawColor: #f0ead6;
+    --buttonColor: black;
+    --searchGo: #3e84fb;
+    --searchGotext: #fff;
+    --searchGoborder: #fff;
+    --mainContainer: #fff;
+    --navhover: #dc6830;
+    --sidTextColor: #818181;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body *{
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, strong{
+    color: var(--mainText);
+    font-family: 'Russo One', sans-serif;
+    font-weight: 500;
+
+}
+
+p, li, span, label, input, textarea{
+    color: var(--secondaryText);
+    font-family: 'Roboto Mono', monospace;
+}
+
+.header{
+    width: 100%;
+}
+
+.header nav{
+    background-color: var(--mainColor);
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.logo{
+    display:grid;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.logo a{
+
+    font-weight: 600;
+    margin-left: 10px;
+    color: var(--secondaryColor);
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.navbar{
+    align-items: center;
+}
+
+.navbar ul{
+    list-style-type: none;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.navbar ul li{
+    margin-left: 30px;
+    display: inline;
+    float: left;
+
+}
+.navbar ul li a{
+    text-transform: uppercase;
+    font-weight: 400;
+    text-decoration: none;
+    display: block;
+    color: var(--secondaryColor);
+    letter-spacing: 2px;
+}
+
+.navbar ul li a:hover {
+    color: var(--navhover);
+  }
+.navbar ul li a:active{
+    text-decoration: underline var(--loginHover);
+}
+
+.loginsignup {
+    padding-right: 10px;
+}
+.loginsignup ul{
+    list-style-type: none;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.loginsignup ul li{
+    display: inline;
+}
+.loginsignup ul li a{
+    background-color: var(--loginHover);
+    border: 0;
+    border-radius: .125rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: .875rem;
+    font-weight: bolder;
+    padding: .625rem 1.25rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition-property: background-color;
+    letter-spacing: 2px;
+}
+
+.loginsignup ul li a:hover {
+    background-color: var(--loginhovbac);
+    color: var(--loginHover);
+}
+
+.banner{
+    width: 100%;
+    height: 400px;
+    background-image: url("/frontend/image/blog-3-806x440.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    text-align: center
+
+}
+.service{
+    display: block;
+}
+.service h1{
+    color: var(--secondaryText);
+    font-size:24px;
+    font-weight: 500;
+}
+
+.service a{
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #3498db;
+    border: 2px solid #3498db;
+    text-decoration: none;
+}
+
+.service a:hover {
+    background: #3498db;
+    color: #fff;
+}
+
+.main-container{
+    background-color: var(--mainContainer);
+    display: grid;
+    grid-template-columns: 20% 55% 25%;
+    grid-template-areas:
+    'theme container left-nav';
+    column-gap: 10px;
+
+}
+
+.theme-dots{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid var(--borderColor);
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+
+#theme-option-wrepper{
+    margin-top: 20px;
+    display: grid block;
+    grid-area: theme;
+}
+
+.theme{
+    display: flex;
+    justify-content: center;
+}
+.theme-dots:hover{
+    border-width: 5px;
+}
+
+#light-mode{
+    background-color: #fff;
+}
+#blue-mode{
+    background-color: blue;
+}
+#green-mode{
+    background-color: green;
+}
+#purple-mode{
+    background-color: #372318;
+}
+
+#settings-note{
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+}
+.container{
+    margin-top: 20px;
+    display: grid;
+    grid-area: container;
+    background-color: var(--containerColor);
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+
+}
+
+.post{
+    margin: 5px;
+    text-align: center;
+}
+
+.post h1{
+    font-size: 18px;
+    color: var(--mainText);
+}
+
+.post p{
+    color: var(--mainText);
+}
+.paragraph p{
+    font-size: 14px;
+    color: var(--mainText);
+}
+.left-navbar{
+    margin-top: 20px;
+    display: grid block;
+    grid-area: left-nav;
+}
+
+
+.search{
+
+    margin-bottom:5px;
+}
+.search form{
+    display: block;
+    width: 100%;
+}
+
+.button-go{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--mainText);
+    background-color: var(--previewBg);
+    border: 2px solid var(--secondaryText);
+}
+
+.button-go:hover{
+    border: 2px solid var(--themeDotBorder);
+    background-color: var(--searchGo);
+    color: var(--searchGotext);
+}
+.sidenav {
+    height: auto; /* Full-height: remove this if you want "auto" height */
+    width: 100%; /* Set the width of the sidebar */
+    margin-right: 30px;
+    background-color: var(--previewBg);
+    padding-top: 20px;
+  }
+
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--sidTextColor);
+    display: block;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: var(--mainText);
+  }
+
+  .footer{
+      margin-top: 10px;
+      text-align: center;
+      background-color: var(--mainColor);
+      height: 80px;
+      width: 100%;
+      display: grid;
+      align-items: center;
+  }
+.footer p{
+    color: var(--mainText);
+}

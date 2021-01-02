@@ -1,0 +1,18 @@
+:root{
+    --mainColor: #fff;
+    --containerColor: #fff;
+    --secondaryColor: #000;
+    --borderColor: #000;
+    --mainText: #000;
+    --loginHover: #1e1e1e;
+    --loginhovbac: #fff;
+    --secondaryText: #000;
+    --themeDotBorder: #24292e;
+    --previewBg: rgba(248, 245, 241, 0.8);
+    --buttonColor: black;
+    --searchGo: #3e84fb;
+    --searchGotext: #fff;
+    --searchGoborder: #fff;
+    --navhover: #dc6830;
+    --sidTextColor: #818181;
+}
